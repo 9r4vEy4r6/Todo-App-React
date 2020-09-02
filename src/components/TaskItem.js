@@ -4,7 +4,7 @@ class TaskItem extends React.Component{
 
 	render(){
 		return(
-			<input type = "checkbox" checked = "true">CheckBox</input>
+			<input type = "checkbox" checked = "true" />
 		);
 	}
 }
