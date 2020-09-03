@@ -13,14 +13,13 @@ class TaskList extends React.Component {
 	}
 
 	handleChange(id){
-		console.log(id);
+		const NewList = this.state.tasksList.map(item => {
+			if (item.id === id){
+				item.done = !item.done
+			}
+			return item
+		});
 		this.setState(prevState => {
-			const NewList = prevState.tasksList.map(item => {
-				if (item.id===id){
-					item.done = !item.done;
-				}
-				return item;
-			});
 			return {
 				tasksList : NewList
 			}
