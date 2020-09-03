@@ -6,7 +6,7 @@ class TaskList extends React.Component {
 	render(){
 		return(
 			<div className="task-list-div">
-				<TaskList />
+				<TaskItem />
 			</div>
 		);
 	}

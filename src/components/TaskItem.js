@@ -4,7 +4,11 @@ class TaskItem extends React.Component{
 
 	render(){
 		return(
-			<input type = "checkbox" checked = "true" />
+			<div className="task-list-item">
+				<input type = "checkbox" checked = {props.item.done} />
+			 	<span className="task-content">{props.item.task}</span>
+				<br /><hr />
+			</div>
 		);
 	}
 }
