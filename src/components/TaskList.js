@@ -3,11 +3,11 @@ import TaskItem from './TaskItem.js';
 import Tasks from './Tasks.json';
 
 class TaskList extends React.Component {
-        const CompList = Tasks.tasks.map<
 	render(){
+        	const CompList = Tasks.tasks.map(item => <TaskItem key={item.id} item={item} />);
 		return(
 			<div className="task-list-div">
-				<TaskItem />
+				{CompList}
 			</div>
 		);
 	}
