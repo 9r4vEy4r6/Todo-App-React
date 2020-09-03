@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+	background : rgba(1,1,1,1);
+}
+
+.task-list-div{
+	position : absolute;
+	width : 40%;
+	padding : 30px;
+	top : 10%;
+	left : 25%;
+	right : 25%;
+	align : center;
+	font-size : 2em;
+	background : red;
+}
+
+.task-list-div-internal{
+	background : white;
+	padding : 30px;
+}
+
+.task-list-div-internal h1{
+	text-align : center;
+}
+
+.task-list-item{
+	background : rgba(0,255,0,0.7);
+	border : 3px solid rgba(0,255,0,1);
+	border-radius : 5px;
+}
+
+.task-list-item-incomplete{
+	background : rgba(255,0,0,0.7);
+	border : 3px solid rgba(255,0,0,0.95);
+	border-radius : 5px;
+}
+
+.task-content{
+	margin : 0px 10px;
+}

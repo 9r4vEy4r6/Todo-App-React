@@ -30,7 +30,11 @@ class TaskList extends React.Component {
         	const CompList = this.state.tasksList.map(item => <TaskItem key={item.id} item={item} changeHandler={this.handleChange}/>);
 		return(
 			<div className="task-list-div">
-				{CompList}
+				<div className = "task-list-div-internal">
+					<h1><em>Tasks List</em></h1>
+					<hr /><br />
+					{CompList}
+				</div>
 			</div>
 		);
 	}
